@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>About — STEPHANUS MINISTRY</title><link rel="stylesheet" href="assets/styles.css"/><link rel="icon" href="images/logo.png">
+  <meta name="description" content="STEPHANUS MINISTRY — About. EIN 86-2682518.">
+</head><body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="STEPHANUS MINISTRY logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="section container split">
+  <div>
+    <h1>About STEPHANUS MINISTRY</h1>
+    <p><strong>STEPHANUS MINISTRY</strong> is organized under California’s Nonprofit Public Benefit Corporation Law and operates for charitable purposes as a recognized <strong>501(c)(3)</strong> with EIN <strong>86-2682518</strong>.</p>
+    <p><em>Specific purpose:</em> provide services to other organizations — strengthening nonprofits, ministries, and community groups through training, shared logistics, and resource coordination.</p>
+    <ul class="small">
+      <li>No substantial part of our activities involves lobbying or political campaigning.</li>
+      <li>Assets are irrevocably dedicated to charitable and educational purposes.</li>
+      <li>Upon dissolution, remaining assets go to a similar 501(c)(3).</li>
+    </ul>
+  </div>
+  <figure class="figure"><img src="images/about.jpg" alt="About our mission"></figure>
+</main>
+
+<section class="section container grid-3">
+  <div class="card"><div class="card-body"><strong>Address</strong><p class="small">2355 Stahl Ct, Gold River, CA 95670</p></div></div>
+  <div class="card"><div class="card-body"><strong>Contact</strong><p class="small">Email: contact@stephanusministry.online<br>Phone: +1 458-317-4599</p></div></div>
+  <div class="card"><div class="card-body"><strong>Focus Areas</strong><p class="small">Capacity • Shared Services • Partnerships</p></div></div>
+</section>
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> STEPHANUS MINISTRY</div>
+      <div class="small">California Nonprofit Public Benefit • 501(c)(3) • EIN 86-2682518</div>
+    </div>
+    <div><div class="small"><strong>Mission:</strong><br>We provide services to other organizations — strengthening nonprofits, ministries, and community groups through training, shared logistics, and resource coordination.</div></div>
+    <div><div class="small"><strong>Address:</strong><br>2355 Stahl Ct<br>Gold River, CA 95670<br>
+      <strong>Email:</strong> <a href="mailto:contact@stephanusministry.online">contact@stephanusministry.online</a><br>
+      <strong>Phone:</strong> <a href="tel:+14583174599">+1 458-317-4599</a></div></div>
+  </div>
+</footer>
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+</body></html>

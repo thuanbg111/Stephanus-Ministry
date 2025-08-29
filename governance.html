@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Governance — STEPHANUS MINISTRY</title><link rel="stylesheet" href="assets/styles.css"/><link rel="icon" href="images/logo.png">
+  <meta name="description" content="Governance — STEPHANUS MINISTRY. EIN 86-2682518.">
+</head><body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="STEPHANUS MINISTRY logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="section container split">
+  <div>
+    <h1>Governance &amp; Legal</h1>
+    <p>Organized and operated exclusively for purposes within the meaning of Internal Revenue Code section <strong>501(c)(3)</strong>. We do not engage in political campaign activity.</p>
+    <p><strong>Registered Agent:</strong> inc.group (Registered Corporate Agent)</p>
+    <p><strong>Principal Executive Office:</strong><br>2355 Stahl Ct<br>Gold River, CA 95670</p>
+    <p class="small">Upon dissolution, remaining assets will be distributed to a 501(c)(3) organization for charitable and educational purposes.</p>
+  </div>
+  <figure class="figure"><img src="images/programs.jpg" alt="Governance documents"></figure>
+</main>
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> STEPHANUS MINISTRY</div>
+      <div class="small">California Nonprofit Public Benefit • 501(c)(3) • EIN 86-2682518</div>
+    </div>
+    <div><div class="small"><strong>Mission:</strong><br>We provide services to other organizations — strengthening nonprofits, ministries, and community groups through training, shared logistics, and resource coordination.</div></div>
+    <div><div class="small"><strong>Address:</strong><br>2355 Stahl Ct<br>Gold River, CA 95670<br>
+      <strong>Email:</strong> <a href="mailto:contact@stephanusministry.online">contact@stephanusministry.online</a><br>
+      <strong>Phone:</strong> <a href="tel:+14583174599">+1 458-317-4599</a></div></div>
+  </div>
+</footer>
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+</body></html>
